@@ -1,0 +1,196 @@
+/* fonts */
+@font-face {
+  font-family: "Tiro Devanagari Marathi";
+  src: url("../fonts/TiroDevanagariMarathi-Regular.woff");
+  font-weight: normal;
+}
+
+:root {
+  --font-family: "Tiro Devanagari Marathi", sans-serif;
+  --primary-color: #292929; /* Added color variable */
+  --nav-bg-color: #ffffff; /* Added background color variable */
+  --nav-link-color: #333333; /* Added link color variable */
+  --nav-link-hover: #000000; /* Added hover color variable */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  background-color: var(--nav-bg-color);
+  padding: 1rem 2rem;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 4rem; /* Even spacing between links */
+  list-style: none;
+  margin: 0;
+  padding-top: 14px;
+  justify-content: center;
+}
+
+.nav-link {
+  font-family: var(--font-family);
+  font-size: 14px; /* 16px equivalent */
+  color: var(--nav-link-color);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--nav-link-hover);
+}
+
+/* logo */
+.logo {
+  padding: 18px;
+  font-family: var(--font-family);
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #292929;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margins */
+}
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--primary-color); */
+  position: relative;
+  overflow: hidden;
+  padding: 48px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block; /* Removes default image spacing */
+}
+
+/* 
+fonts
+@font-face {
+  font-family: "Tiro Devanagari Marathi";
+  src: url("../fonts/TiroDevanagariMarathi-Regular.woff");
+  font-weight: normal;
+}
+
+:root {
+  --font-family: "Tiro Devanagari Marathi", sans-serif;
+  --primary-color: #292929;
+  --nav-bg-color: #ffffff;
+  --nav-link-color: #333333;
+  --nav-link-hover: #000000;
+  --section-padding: 2rem;
+  --logo-spacing: 3rem;
+  --nav-spacing: 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+Page Layout
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--section-padding);
+}
+
+Navigation 
+.nav-container {
+  background-color: var(--nav-bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: var(--nav-spacing);
+}
+
+.logo {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: var(--logo-spacing);
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--nav-link-hover);
+}
+
+Hero Section
+.hero-section {
+  flex: 1;
+  width: calc(100% + (2 * var(--section-padding)));
+  margin: 0 calc(-1 * var(--section-padding));
+  position: relative;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+ */

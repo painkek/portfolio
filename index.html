@@ -1,13 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="/src/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Andre Portfolio</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <!-- nav section -->
+    <header class="nav-container">
+      <!-- Fixed typo in class name -->
+      <div class="logo">
+        <h1><a href="/">ANDRE</a></h1>
+      </div>
+      <nav>
+        <!-- Added semantic nav tag -->
+        <ul class="nav-links">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#photos" class="nav-link">Photos</a></li>
+          <li><a href="#videos" class="nav-link">Videos</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <img
+          src="/public/assets/hero.jpg"
+          alt="Andre's Portfolio Hero Image"
+          class="hero-image"
+        />
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about-section">
+      <div>
+        <p>
+          It’s beautiful when <span>emotion</span> meets artistry. A work with
+          love, passion, and talent each frame crafted to reflect stillness,
+          intimacy, and story. Let’s capture your moments not just as they are,
+          but as they feel timeless, poetic, and unforgettable. Through
+          thoughtful photography and videography, I seek not to simply document,
+          but to preserve the quiet beauty that lives between the seconds.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
